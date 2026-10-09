@@ -22,7 +22,7 @@ Français : [README.fr.md](README.fr.md)
   (206 - 0.88 x age) for women.
 - Zones: below 60 %, 60-70 %, 70-80 %, 80-90 % and 90 % or more of that maximum.
 - Calories: Keytel formula, from average heart rate, weight, age and sex.
-- Distance: steps multiplied by a stride length estimated from your height.
+- Distance: steps are determined by a stride length you can set in settings. the stride length asks for a length in cm. if you have an iPhone, check your health app and select mobility to see your average walking stride and running stride and calculate it in cm. 
   There is no GPS, so distance, pace and speed are estimates.
 
 ## Requirements
