@@ -1,4 +1,4 @@
-# RunZone
+# PebblePacer
 
 A workout app for the **Pebble Time 2** (platform `emery`): walk, run or train
 with your heart rate shown live in five colour-coded effort zones.
