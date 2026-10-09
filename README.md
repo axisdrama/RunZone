@@ -48,7 +48,7 @@ on your phone and on your watch. Until you save them once, defaults are used
 ## Status and limitations
 
 - Tested on a Pebble Time 2 and in the emulator.
-- Metric units only (kg, cm, km).
+- Metric units only (kg, cm, km) in settings. imperial units can be selected to display to show the distance in miles. 
 - The German, Spanish, Italian and Portuguese texts were written with
   assistance and have not been reviewed by native speakers: corrections are
   welcome.
