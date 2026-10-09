@@ -1,4 +1,4 @@
-# Allure
+# RunZone
 
 Une application d'entraînement pour la **Pebble Time 2** (plateforme `emery`) :
 marche, course ou entraînement, avec ta fréquence cardiaque affichée en direct

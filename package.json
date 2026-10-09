@@ -1,7 +1,7 @@
 {
-  "name": "allure",
+  "name": "runzone",
   "author": "WayeM",
-  "version": "1.0.2",
+  "version": "1.3.1",
   "keywords": [
     "pebble-app"
   ],
@@ -10,8 +10,8 @@
     "@rebble/clay": "^1.1.0"
   },
   "pebble": {
-    "displayName": "Allure",
-    "uuid": "74fd9950-e0f4-48b8-8a4f-aff3e1210aad",
+    "displayName": "RunZone",
+    "uuid": "a2b7d3c1-5f84-4b91-9e2a-6d4f7c8b1a03",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "capabilities": [
@@ -28,7 +28,10 @@
       "Sex",
       "Age",
       "Height",
-      "Weight"
+      "Weight",
+      "Stride",
+      "WalkStride",
+      "UnitSystem"
     ],
     "resources": {
       "media": [
@@ -36,7 +39,7 @@
           "type": "font",
           "name": "FONT_ROBOTO_CONDENSED_EXTRABOLD_56",
           "file": "fonts/robotocondensed-extrabold.ttf",
-          "characterRegex": "[0-9: ]"
+          "characterRegex": "[0-9:.\\- ]"
         },
         {
           "type": "font",
@@ -54,19 +57,11 @@
           "type": "font",
           "name": "FONT_ROBOTO_CONDENSED_EXTRABOLD_34",
           "file": "fonts/robotocondensed-extrabold.ttf",
-          "characterRegex": "[0-9A-Za-z\\u00C0-\\u00FF.: ]"
+          "characterRegex": "[0-9A-Za-z\\u00C0-\\u00FF.:\\- ]"
         }
       ]
     }
   },
-  "description": "Workout app for the Pebble Time 2 with live heart-rate zones",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WayeMelse/allure.git"
-  },
-  "homepage": "https://github.com/WayeMelse/allure#readme",
-  "bugs": {
-    "url": "https://github.com/WayeMelse/allure/issues"
-  }
+  "description": "Running app for the Pebble Time 2 with live heart rate, zones, elapsed time and stride-based distance",
+  "license": "MIT"
 }

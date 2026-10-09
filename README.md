@@ -1,7 +1,7 @@
 # RunZone
 
 A workout app for the **Pebble Time 2** (platform `emery`): walk, run or train
-with your heart rate shown live in five colour-coded effort zones. forked from Allure. 
+with your heart rate shown live in five colour-coded effort zones.
 
 Français : [README.fr.md](README.fr.md)
 
@@ -48,7 +48,7 @@ on your phone and on your watch. Until you save them once, defaults are used
 ## Status and limitations
 
 - Tested on a Pebble Time 2 and in the emulator.
-- Metric units only (kg, cm, km) but you can have it display Imperial units for distances run. 
+- Metric units only (kg, cm, km).
 - The German, Spanish, Italian and Portuguese texts were written with
   assistance and have not been reviewed by native speakers: corrections are
   welcome.
@@ -60,5 +60,9 @@ The source code is released under the [MIT License](LICENSE).
 The fonts in `resources/fonts/` keep their own licenses (SIL Open Font
 License 1.1): see [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
 
-Author of Allure: WayeM
-Author of forked version with Imperial and custom stride lengths: axisdrama
+Author: WayeM
+
+
+## RunZone changes
+- Running-focused display with elapsed time, live heart rate, heart-rate zone, and stride-based distance.
+- Running stride length is configurable in the phone settings (40–120 cm).

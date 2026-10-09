@@ -1,7 +1,7 @@
 # Third-party licenses / Licences tierces
 
-Allure uses the following third-party components. Each keeps its own license.
-Allure utilise les composants tiers suivants, chacun conservant sa licence.
+RunZone uses the following third-party components. Each keeps its own license.
+RunZone utilise les composants tiers suivants, chacun conservant sa licence.
 
 ## Roboto Condensed
 
