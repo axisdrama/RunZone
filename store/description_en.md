@@ -1,10 +1,10 @@
-# Allure
+# RunZone
 
 **Tagline:** Walk, run, train: follow your heart rate by color zone.
 
 **Description:**
 
-Allure is an activity tracker for the Pebble Time 2 that turns your heart rate into color. Pick an activity, start, and glance at your wrist: the screen color shows your effort zone, and the current time stays visible.
+RunZone is an activity tracker for the Pebble Time 2 that turns your heart rate into color. Pick an activity, start, and glance at your wrist: the screen color shows your effort zone, and the current time stays visible.
 
 * Three activities: walk, run and workout.
 * Live heart rate with 5 effort zones, each with its own color.
@@ -17,8 +17,8 @@ Allure is an activity tracker for the Pebble Time 2 that turns your heart rate i
 
 Requires a Pebble Time 2 with the heart rate sensor enabled.
 
-This is a beta version. Heart rate zones, distance and calories are estimates, and Allure is not a medical device.
+This is a beta version. Heart rate zones, distance and calories are estimates, and RunZone is not a medical device.
 
 Author: WayeM
 
-Source code: https://github.com/WayeMelse/allure
+Source code: 
