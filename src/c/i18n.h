@@ -2,8 +2,8 @@
 
 #include <pebble.h>
 
-// Identifiants des textes de l'application. Les trois premiers doivent
-// rester dans l'ordre des activites (marche, course, entrainement).
+// Text identifiers used by the application. The first three must remain
+// in activity order (walk, run, training).
 typedef enum {
   STR_ACTIVITY_WALK = 0,
   STR_ACTIVITY_RUN,
@@ -25,8 +25,9 @@ typedef enum {
   STR_SUMMARY_HR_AVG,
   STR_SUMMARY_HR_MAX,
   STR_SUMMARY_CALORIES,
+  STR_DISTANCE_UNITS,
   STR_COUNT
 } StringId;
 
-// Renvoie le texte dans la langue du systeme de la montre (anglais par defaut).
+// Returns text in the watch system language (English by default).
 const char *tr(StringId id);

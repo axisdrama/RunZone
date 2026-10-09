@@ -2,9 +2,9 @@
 
 #include <string.h>
 
-// -1 = langue du systeme de la montre (comportement normal)
-// Pour tester dans l'emulateur : 0 anglais, 1 francais, 2 allemand,
-// 3 espagnol, 4 italien, 5 portugais.
+// -1 = watch system language (normal behavior)
+// For emulator testing: 0 English, 1 French, 2 German,
+// 3 Spanish, 4 Italian, 5 Portuguese.
 #define I18N_FORCED_LANGUAGE -1
 
 typedef enum {
@@ -39,6 +39,7 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "AVG HEART RATE",
     [STR_SUMMARY_HR_MAX]     = "MAX HEART RATE",
     [STR_SUMMARY_CALORIES]   = "CALORIES",
+    [STR_DISTANCE_UNITS]     = "DISTANCE UNITS",
   },
   [LANGUAGE_FR] = {
     [STR_ACTIVITY_WALK]      = "Marche",
@@ -61,6 +62,7 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "FRÉQ. CARD. MOYENNE",
     [STR_SUMMARY_HR_MAX]     = "FRÉQ. CARD. MAX",
     [STR_SUMMARY_CALORIES]   = "CALORIES",
+    [STR_DISTANCE_UNITS]     = "UNITÉS DE DISTANCE",
   },
   [LANGUAGE_DE] = {
     [STR_ACTIVITY_WALK]      = "Gehen",
@@ -83,6 +85,7 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "MITTL. HERZFREQ.",
     [STR_SUMMARY_HR_MAX]     = "MAX. HERZFREQ.",
     [STR_SUMMARY_CALORIES]   = "KALORIEN",
+    [STR_DISTANCE_UNITS]     = "ENTFERNUNGSEINHEITEN",
   },
   [LANGUAGE_ES] = {
     [STR_ACTIVITY_WALK]      = "Caminar",
@@ -105,6 +108,7 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "FREC. CARD. MEDIA",
     [STR_SUMMARY_HR_MAX]     = "FREC. CARD. MÁX.",
     [STR_SUMMARY_CALORIES]   = "CALORÍAS",
+    [STR_DISTANCE_UNITS]     = "UNIDADES DE DISTANCIA",
   },
   [LANGUAGE_IT] = {
     [STR_ACTIVITY_WALK]      = "Camminata",
@@ -127,6 +131,7 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "FREQ. CARD. MEDIA",
     [STR_SUMMARY_HR_MAX]     = "FREQ. CARD. MAX",
     [STR_SUMMARY_CALORIES]   = "CALORIE",
+    [STR_DISTANCE_UNITS]     = "UNITÀ DISTANZA",
   },
   [LANGUAGE_PT] = {
     [STR_ACTIVITY_WALK]      = "Caminhada",
@@ -149,10 +154,11 @@ static const char *const s_strings[LANGUAGE_COUNT][STR_COUNT] = {
     [STR_SUMMARY_HR_AVG]     = "FREQ. CARD. MÉDIA",
     [STR_SUMMARY_HR_MAX]     = "FREQ. CARD. MÁX.",
     [STR_SUMMARY_CALORIES]   = "CALORIAS",
+    [STR_DISTANCE_UNITS]     = "UNIDADES DE DISTÂNCIA",
   },
 };
 
-// La montre renvoie un code du type "fr_FR" : on ne regarde que la langue.
+// The watch returns a code such as "fr_FR"; only the language is checked.
 static Language language_from_locale(const char *locale) {
   if (locale == NULL) {
     return LANGUAGE_EN;
@@ -164,8 +170,8 @@ static Language language_from_locale(const char *locale) {
   if (strncmp(locale, "it", 2) == 0) return LANGUAGE_IT;
   if (strncmp(locale, "pt", 2) == 0) return LANGUAGE_PT;
 
-  // Anglais par defaut. Le chinois n'est pas encore pris en charge :
-  // il tombe aussi sur l'anglais.
+  // English by default. Chinese is not currently supported,
+  // so it also falls back to English.
   return LANGUAGE_EN;
 }
 
