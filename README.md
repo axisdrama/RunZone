@@ -65,4 +65,4 @@ Author: WayeM
 
 ## RunZone changes
 - Running-focused display with elapsed time, live heart rate, heart-rate zone, and stride-based distance.
-- Running stride length is configurable in the phone settings (40–120 cm).
+- Running stride length is configurable in the phone settings (40–200 cm).
